@@ -91,7 +91,7 @@ public class LibraryManagementSystem {
             System.out.print("Enter your choice: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline character
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -101,7 +101,7 @@ public class LibraryManagementSystem {
                 case 2:
                     System.out.print("Enter the book ID to borrow: ");
                     int borrowId = scanner.nextInt();
-                    scanner.nextLine(); // Consume the newline character
+                    scanner.nextLine();
                     Book borrowBook = library.findBookById(borrowId);
                     if (borrowBook != null && borrowBook.isAvailable()) {
                         borrowBook.borrow();
@@ -113,7 +113,7 @@ public class LibraryManagementSystem {
                 case 3:
                     System.out.print("Enter the book ID to return: ");
                     int returnId = scanner.nextInt();
-                    scanner.nextLine(); // Consume the newline character
+                    scanner.nextLine();
                     Book returnBook = library.findBookById(returnId);
                     if (returnBook != null && !returnBook.isAvailable()) {
                         returnBook.returnBook();
