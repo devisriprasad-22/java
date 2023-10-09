@@ -77,7 +77,7 @@ public class LibraryManagementSystem {
         Scanner scanner = new Scanner(System.in);
         Library library = new Library();
 
-        // Add some initial books to the library
+       
         library.addBook(new Book(1, "Harry Potter", "J.K.Rowling"));
         library.addBook(new Book(2, "One Piece", "ODA"));
         library.addBook(new Book(3, "Naruto", "Kishimoto"));
